@@ -28,6 +28,17 @@ namespace QuickSort
                 else
                     Console.WriteLine("\nArray can make maximum 20 elements\n");
             }
+            Console.WriteLine("\n==================");
+            Console.WriteLine("Enter array elements");
+            Console.WriteLine("\n==================");
+
+            //Get array element
+            for(int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                arr[i] = Int32.Parse(s1);
+            }
         }
         static void Main(string[] args)
         {
