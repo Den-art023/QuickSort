@@ -76,6 +76,13 @@ namespace QuickSort
                     cmp_count++;
                 }
                 cmp_count++;
+
+                if (i < j) //If the greater element is on the left of the element
+                {
+                    //Swap the element at idex i with the element at index j
+                    swap(i, j);
+                    mov_count++;
+                }
             }
         }
         static void Main(string[] args)
