@@ -49,6 +49,16 @@ namespace QuickSort
             arr[x] = arr[y];
             arr[y] = temp;
         }
+        public void q_short(int low, int high)
+        {
+            int pivot, i, j;
+            if (low > high)
+                return;
+            i = low + 1;
+            j = high;
+
+            pivot arr[low];
+        }
         static void Main(string[] args)
         {
         }
