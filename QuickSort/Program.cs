@@ -57,7 +57,7 @@ namespace QuickSort
             i = low + 1;
             j = high;
 
-            pivot arr[low];
+            pivot = arr[low];
 
             while(i <= j)
             {
@@ -100,7 +100,16 @@ namespace QuickSort
         }
         void display()
         {
+            Console.WriteLine("\n---------------------");
+            Console.WriteLine(" Sorted array elements ");
+            Console.WriteLine("\n---------------------");
 
+            for(int j = 0; j < n; j++)
+            {
+                Console.WriteLine(arr[j]);
+            }
+            Console.WriteLine("\nNumber of comparisons: " + cmp_count);
+            Console.WriteLine("\nNumber of data movement: " + mov_count);
         }
         static void Main(string[] args)
         {
